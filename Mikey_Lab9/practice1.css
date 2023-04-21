@@ -1,0 +1,154 @@
+/* Global styles */
+body {
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+background-color: #c4e2ff;
+}
+
+/* Navbar */
+.navbar-top {
+background-color: #333;
+color: #fff;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+}
+
+.navbar-top .title h1 {
+margin: 0;
+font-size: 28px;
+}
+
+.navbar-top ul {
+margin: 0;
+padding: 0;
+list-style: none;
+display: flex;
+}
+
+.navbar-top ul li {
+margin-left: 10px;
+}
+
+.navbar-top ul li a {
+display: inline-block;
+padding: 10px;
+color: #fff;
+text-decoration: none;
+border: 1px solid #fff;
+border-radius: 5px;
+transition: all 0.3s ease-in-out;
+}
+
+.navbar-top ul li a:hover {
+background-color: #fff;
+color: #333;
+}
+
+/* Home button */
+.button {
+background-color: #4542e7;
+color: white;
+border: none;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+border-radius: 5px;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+/* Sidenav */
+.sidenav {
+background-color: #fff;
+height: 100vh;
+width: 250px;
+position: fixed;
+top: 0;
+left: -250px;
+transition: all 0.3s ease-in-out;
+z-index: 999;
+}
+
+.sidenav.show {
+left: 0;
+}
+
+.profile {
+text-align: center;
+margin: 20px 0;
+}
+
+.profile img {
+border-radius: 50%;
+}
+
+.profile .name {
+margin: 10px 0;
+font-size: 24px;
+}
+
+.profile .job {
+font-size: 18px;
+}
+
+/* Main content */
+.main {
+margin: 20px;
+padding: 20px;
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.main h2 {
+margin-top: 0;
+}
+
+.card {
+margin-top: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+padding: 20px;
+position: relative;
+}
+
+.card-body {
+padding-left: 30px;
+position: relative;
+}
+
+.card-body img {
+    border-radius: 80%;
+    float: right;
+    margin: 0 0 150px 150px;
+}
+
+.edit {
+position: absolute;
+top: 10px;
+right: 10px;
+color: #ccc;
+cursor: pointer;
+}
+
+@media (max-width: 768px) {
+.main {
+margin: 20px 0;
+}
+
+.sidenav {
+left: -100%;
+width: 80%;
+}
+
+.sidenav.show {
+left: 0;
+}
+}
